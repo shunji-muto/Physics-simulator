@@ -1147,5 +1147,3 @@ void marchingcubes::t_MarchingCubes(
   t_MarchingCubes_PolygonSoup(vRes, vPitch, vol, thresh, minIdx, maxIdx, n, soup_verts);
 
 }
-
-

@@ -18,4 +18,5 @@ Class SolidSimulator.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeField
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
+    RedrawMainPanel(): PrivateScope, Public, HideBySig
     getInst(): PrivateScope, Public, Static, HideBySig

@@ -1,6 +1,8 @@
 #pragma once
 
+#include "stdio.h"
 #include "OglForCLI.h"
+#include "Score.h"
 
 
 
@@ -26,14 +28,15 @@ namespace SolidSimulator {
 
 	public:
 		MainForm::MainForm();
+		
+		void RedrawMainPanel();
+		
 		static MainForm^ getInst()
 		{
 			if (m_singleton == nullptr) m_singleton = gcnew MainForm();
 			return m_singleton;
 		}
 
-	private:
-		
 
 	protected:
 		/// <summary>
@@ -47,12 +50,8 @@ namespace SolidSimulator {
 			}
 		}
 	private: System::Windows::Forms::Panel^  m_main_panel;
-	protected:
 
-	protected:
 	private: System::ComponentModel::BackgroundWorker^  backgroundWorker1;
-
-	protected:
 
 	private:
 		/// <summary>
@@ -60,11 +59,7 @@ namespace SolidSimulator {
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
-		///<summary>
-		///レンダリング関数
-		///</summary>
-		void RedrawMainPanel();
-
+		
 #pragma region Windows Form Designer generated code
 		/// <summary>
 		/// デザイナー サポートに必要なメソッドです。このメソッドの内容を
@@ -138,4 +133,10 @@ namespace SolidSimulator {
 	}
 
 	};
+	
+
+	inline void MainForm_RedrawMainPanel() 
+	{
+		MainForm::getInst()->RedrawMainPanel();
+	}
 }
