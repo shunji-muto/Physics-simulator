@@ -4,11 +4,13 @@
 
 #include "MainForm.h"
 #include "RigidPlane.h"
+#include "RigidSphere.h"
 
 class Score
 {
 private:
-	RigidPlane* testPlane;
+	RigidPlane  *testPlane;
+	RigidSphere *testSphere;
 
 public:
 	Score();

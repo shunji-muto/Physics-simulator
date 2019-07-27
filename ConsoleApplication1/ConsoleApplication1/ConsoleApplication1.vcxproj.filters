@@ -54,6 +54,9 @@
     <ClInclude Include="COMMON\tqueue.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="RigidSphere.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">
@@ -77,6 +80,9 @@
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="RigidPlane.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="RigidSphere.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>

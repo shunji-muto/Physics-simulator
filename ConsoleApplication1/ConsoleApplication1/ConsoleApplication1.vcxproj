@@ -147,6 +147,7 @@
     </ClInclude>
     <ClInclude Include="Resource.h" />
     <ClInclude Include="RigidPlane.h" />
+    <ClInclude Include="RigidSphere.h" />
     <ClInclude Include="Score.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
@@ -156,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="RigidPlane.cpp" />
+    <ClCompile Include="RigidSphere.cpp" />
     <ClCompile Include="Score.cpp" />
     <ClCompile Include="SolidSimulator.cpp" />
     <ClCompile Include="MainForm.cpp" />

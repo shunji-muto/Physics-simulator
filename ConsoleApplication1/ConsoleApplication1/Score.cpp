@@ -7,7 +7,8 @@ using namespace SolidSimulator;
 
 Score::Score()
 {
-	testPlane = new RigidPlane(EVec3f(10, 1, 10), EVec3f(-5, -10, -5), EVec3f(0, 1, 0));
+	testPlane  = new RigidPlane (EVec3f(10, 1, 10), EVec3f(-5, -10, -5), EVec3f(0, 1, 0));
+	testSphere = new RigidSphere(5.0f, EVec3f(0, 0, 0));
 }
 
 void Score::StepTime()
@@ -17,5 +18,6 @@ void Score::StepTime()
 
 void Score::OnDraw()
 {
-	testPlane->drawObj();
+	testPlane ->DrawObj();
+	testSphere->DrawObj();
 }
