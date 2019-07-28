@@ -94,6 +94,7 @@ namespace SolidSimulator {
 			this->Controls->Add(this->m_main_panel);
 			this->Name = L"MainForm";
 			this->Text = L"MyForm";
+			this->Load += gcnew System::EventHandler(this, &MainForm::MainForm_Load);
 			this->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &MainForm::MainForm_KeyDown);
 			this->KeyUp += gcnew System::Windows::Forms::KeyEventHandler(this, &MainForm::MainForm_KeyUp);
 			this->ResumeLayout(false);
@@ -132,7 +133,9 @@ namespace SolidSimulator {
 	{
 	}
 
-	};
+	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) {
+	}
+};
 	
 
 	inline void MainForm_RedrawMainPanel() 

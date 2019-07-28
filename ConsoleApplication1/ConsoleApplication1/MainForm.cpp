@@ -33,10 +33,8 @@ void MainForm::RedrawMainPanel()
 	}
 
 	m_ogl->OnDrawBegin(m_main_panel->Width, m_main_panel->Height, fovY, nearDist, farDist);
-
 	//ここにレンダリングルーチンを書く
 	Score::getInst()->OnDraw();
-
 	m_ogl->OnDrawEnd();
 }
 
