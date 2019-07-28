@@ -13,20 +13,20 @@ RigidSphere::RigidSphere(const float &radius, const EVec3f &position)
 	const int slice = 16;//緯線（横）
 
 	//頂点座標を記憶
-	for (int i = 0; i < stack; ++i)
+	for (int i = 0; i <= slice; ++i)
 	{
-		const float phi = i / (float)stack;
-		const float y   = cos((float)M_PI * phi * 2) * m_radius;
-		const float r   = sin((float)M_PI * phi * 2) * m_radius;
+		const float phi = i / (float)slice;
+		const float y   = cos((float)M_PI * phi) * m_radius;
+		const float r   = sin((float)M_PI * phi) * m_radius;
 
-		for (int j = -slice/2; j < slice/2; ++j)
+		for (int j = 0; j <= stack; ++j)
 		{
-			const float pi = j / (float)slice;
-			const float z = cos((float)M_PI * pi) * r;
-			const float x = sin((float)M_PI * pi) * r;
+			const float pi = j / (float)stack;
+			const float z = cos((float)M_PI * pi * 2) * r;
+			const float x = sin((float)M_PI * pi * 2) * r;
 		
 			m_vertexs.push_back(EVec3f(x, y, z));
-			m_vertexs.push_back(EVec3f(x, y, z) / m_radius);
+			//m_vertexs.push_back(EVec3f(x, y, z) / m_radius);
 		}
 	}
 
