@@ -18,23 +18,19 @@ System::Void MainForm::m_main_panel_Paint(System::Object^  sender, System::Windo
 }
 System::Void MainForm::m_main_panel_MouseDown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e)
 {
-	m_bBtnDown = true;
-	if (e->Button == System::Windows::Forms::MouseButtons::Left)   m_ogl->BtnDown_Trans(EVec2i(e->X, e->Y));
-	if (e->Button == System::Windows::Forms::MouseButtons::Middle) m_ogl->BtnDown_Zoom(EVec2i(e->X, e->Y));
-	if (e->Button == System::Windows::Forms::MouseButtons::Right)  m_ogl->BtnDown_Rot(EVec2i(e->X, e->Y));
+	if (e->Button == System::Windows::Forms::MouseButtons::Left)   Score::getInst()->BtnDownL(EVec2i(e->X, e->Y), m_ogl);
+	if (e->Button == System::Windows::Forms::MouseButtons::Middle) Score::getInst()->BtnDownM(EVec2i(e->X, e->Y), m_ogl);
+	if (e->Button == System::Windows::Forms::MouseButtons::Right)  Score::getInst()->BtnDownR(EVec2i(e->X, e->Y), m_ogl);
 }
 System::Void MainForm::m_main_panel_MouseUp(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e)
 {
-	m_ogl->BtnUp();
-	m_bBtnDown = false;
+	if (e->Button == System::Windows::Forms::MouseButtons::Left)   Score::getInst()->BtnUpL(EVec2i(e->X, e->Y), m_ogl);
+	if (e->Button == System::Windows::Forms::MouseButtons::Middle) Score::getInst()->BtnUpM(EVec2i(e->X, e->Y), m_ogl);
+	if (e->Button == System::Windows::Forms::MouseButtons::Right)  Score::getInst()->BtnUpR(EVec2i(e->X, e->Y), m_ogl);
 }
 System::Void MainForm::m_main_panel_MouseMove(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e)
 {
-	if (m_bBtnDown)
-	{
-		m_ogl->MouseMove(EVec2i(e->X, e->Y));
-		this->RedrawMainPanel();
-	}
+		Score::getInst()->MouseMove(EVec2i(e->X, e->Y), m_ogl);
 }
 System::Void MainForm::MainForm_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e)
 {
@@ -55,11 +51,7 @@ System::Void MainForm::MainForm_Load(System::Object^  sender, System::EventArgs^
 ///</summary>
 void MainForm::RedrawMainPanel()
 {
-	float fovY = 45.0;
-	float nearDist = 0.1f;
-	float farDist = 1000.0f;
-	static bool  isFirst = true;
-	
+	static bool isFirst = true;
 	if (isFirst)
 	{
 		isFirst = false;
@@ -67,8 +59,7 @@ void MainForm::RedrawMainPanel()
 		m_ogl->SetCam(EVec3f(5, 10, 30), EVec3f(0, 0, 0), EVec3f(0, 1, 0));
 	}
 
-	m_ogl->OnDrawBegin(m_main_panel->Width, m_main_panel->Height, fovY, nearDist, farDist);
-	//ここにレンダリングルーチンを書く
+	m_ogl->OnDrawBegin(m_main_panel->Width, m_main_panel->Height, 45.0, 0.1f, 1000);
 	Score::getInst()->OnDraw();
 	m_ogl->OnDrawEnd();
 }
@@ -86,7 +77,6 @@ static void CALLBACK MyTimerProc(
 
 MainForm::MainForm()
 {
-	m_bBtnDown = false;
 	m_ogl = 0;
 	InitializeComponent();
 	m_ogl = new OglForCLI(GetDC((HWND)m_main_panel->Handle.ToPointer()));

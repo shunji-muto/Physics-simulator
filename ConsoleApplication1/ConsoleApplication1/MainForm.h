@@ -4,8 +4,6 @@
 #include "OglForCLI.h"
 #include "Score.h"
 
-
-
 namespace SolidSimulator {
 
 	using namespace System;
@@ -22,7 +20,6 @@ namespace SolidSimulator {
 	{
 	private:
 		OglForCLI *m_ogl;
-		bool m_bBtnDown;
 		static MainForm^ m_singleton;
 		MainForm::MainForm();
 		~MainForm()
