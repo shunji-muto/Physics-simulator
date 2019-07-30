@@ -12,7 +12,42 @@
 
 using namespace SolidSimulator;
 
-
+System::Void MainForm::m_main_panel_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e)
+{
+	RedrawMainPanel();
+}
+System::Void MainForm::m_main_panel_MouseDown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e)
+{
+	m_bBtnDown = true;
+	if (e->Button == System::Windows::Forms::MouseButtons::Left)   m_ogl->BtnDown_Trans(EVec2i(e->X, e->Y));
+	if (e->Button == System::Windows::Forms::MouseButtons::Middle) m_ogl->BtnDown_Zoom(EVec2i(e->X, e->Y));
+	if (e->Button == System::Windows::Forms::MouseButtons::Right)  m_ogl->BtnDown_Rot(EVec2i(e->X, e->Y));
+}
+System::Void MainForm::m_main_panel_MouseUp(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e)
+{
+	m_ogl->BtnUp();
+	m_bBtnDown = false;
+}
+System::Void MainForm::m_main_panel_MouseMove(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e)
+{
+	if (m_bBtnDown)
+	{
+		m_ogl->MouseMove(EVec2i(e->X, e->Y));
+		this->RedrawMainPanel();
+	}
+}
+System::Void MainForm::MainForm_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e)
+{
+	//–¢ŽÀ‘•
+}
+System::Void MainForm::MainForm_KeyUp(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e)
+{
+	//–¢ŽÀ‘•
+}
+System::Void MainForm::MainForm_Load(System::Object^  sender, System::EventArgs^  e)
+{
+	//–¢ŽÀ‘•
+}
 
 
 ///<summary>
