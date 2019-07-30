@@ -1,18 +1,17 @@
 #include "stdafx.h"
 #include "OglForCLI.h"
 #include "tmath.h"
-#include "RigidPlane.h"
+#include "RigidObject.h"
 #include "Eigen"
 
-RigidPlane::RigidPlane(const EVec3f &size, const EVec3f &position, const EVec3f &nomal)//, const EVec3f &rotation
+RigidPlane::RigidPlane(const EVec3f &size, const EVec3f &position)//, const EVec3f &rotation
 {
 	m_size = size;
 	m_position = position;
-	m_nomal = m_nomal;
-	//m_rotation = rotation;
+	m_objectType = E_Plane;
 }
 
-void RigidPlane::DrawObj()
+void RigidPlane::DrawObject()
 {
 	EVec3f vertPos0 = EVec3f(-m_size[0] / 2, m_size[1], -m_size[2] / 2) + m_position;
 	EVec3f vertPos1 = EVec3f(-m_size[0] / 2, m_size[1], m_size[2] / 2) + m_position;

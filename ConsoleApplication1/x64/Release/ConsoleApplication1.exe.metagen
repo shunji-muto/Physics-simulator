@@ -16,7 +16,7 @@ Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c5619
 	hash=None, flags=None
 Class SolidSimulator.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
-    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
   Methods:
     RedrawMainPanel(): PrivateScope, Public, HideBySig
     getInst(): PrivateScope, Public, Static, HideBySig
+    InitializeComponent(): PrivateScope, Public, HideBySig

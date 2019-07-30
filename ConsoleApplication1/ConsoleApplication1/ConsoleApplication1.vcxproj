@@ -147,10 +147,7 @@
     </ClInclude>
     <ClInclude Include="Resource.h" />
     <ClInclude Include="RigidObject.h" />
-    <ClInclude Include="RigidPlane.h" />
-    <ClInclude Include="RigidSphere.h" />
     <ClInclude Include="Score.h" />
-    <ClInclude Include="ShapeMacthingCube.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
@@ -162,7 +159,6 @@
     <ClCompile Include="RigidPlane.cpp" />
     <ClCompile Include="RigidSphere.cpp" />
     <ClCompile Include="Score.cpp" />
-    <ClCompile Include="ShapeMacthingCube.cpp" />
     <ClCompile Include="SolidSimulator.cpp" />
     <ClCompile Include="MainForm.cpp" />
     <ClCompile Include="stdafx.cpp">

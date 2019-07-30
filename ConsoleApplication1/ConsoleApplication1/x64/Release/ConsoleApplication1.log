@@ -1,4 +1,310 @@
-﻿  MainForm.cpp
+﻿  RigidObject.cpp
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(33): error C3280: 'SolidSimulator::MainForm::~MainForm': マネージ クラスのメンバー関数をアンマネージド 関数としてコンパイルできません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(34): error C3821: 'SolidSimulator::MainForm::components': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3821: 'SolidSimulator::MainForm::components': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3821: 'System::IDisposable::Dispose': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3642: 'void System::IDisposable::Dispose(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3175: 'System::IDisposable::Dispose': アンマネージド 関数 'SolidSimulator::MainForm::~MainForm' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(38): error C3821: 'SolidSimulator::MainForm::~MainForm(void)': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(32): error C3645: 'SolidSimulator::MainForm::~MainForm': __clrcall は、ネイティブ コードにコンパイルされた関数では使用できません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(45): error C3280: 'SolidSimulator::MainForm::getInst': マネージ クラスのメンバー関数をアンマネージド 関数としてコンパイルできません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3821: 'SolidSimulator::MainForm::m_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3821: 'm_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3642: 'SolidSimulator::MainForm::MainForm(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3175: 'SolidSimulator::MainForm::MainForm': アンマネージド 関数 'SolidSimulator::MainForm::getInst' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(47): error C3821: 'SolidSimulator::MainForm::m_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(47): error C3821: 'm_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(48): error C3821: 'SolidSimulator::MainForm ^SolidSimulator::MainForm::getInst(void)': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(44): error C3645: 'SolidSimulator::MainForm::getInst': __clrcall は、ネイティブ コードにコンパイルされた関数では使用できません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(56): error C3280: 'SolidSimulator::MainForm::InitializeComponent': マネージ クラスのメンバー関数をアンマネージド 関数としてコンパイルできません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3821: 'System::Windows::Forms::Panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3642: 'System::Windows::Forms::Panel::Panel(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3175: 'System::Windows::Forms::Panel::Panel': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3821: 'SolidSimulator::MainForm::backgroundWorker1': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3821: 'System::ComponentModel::BackgroundWorker': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3642: 'System::ComponentModel::BackgroundWorker::BackgroundWorker(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3175: 'System::ComponentModel::BackgroundWorker::BackgroundWorker': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(59): error C3821: 'System::Windows::Forms::Control::SuspendLayout': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(59): error C3642: 'void System::Windows::Forms::Control::SuspendLayout(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(59): error C3175: 'System::Windows::Forms::Control::SuspendLayout': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'System::Windows::Forms::Control::Anchor': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'System::Windows::Forms::AnchorStyles::Top': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'System::Windows::Forms::AnchorStyles::Bottom': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(64): error C3821: 'System::Windows::Forms::AnchorStyles::Left': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(65): error C3821: 'System::Windows::Forms::AnchorStyles::Right': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(65): error C3821: 'System::Windows::Forms::AnchorStyles': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(65): error C2039: 'set': 'System::Windows::Forms::Control::Anchor' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(66): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(66): error C2039: 'set': 'System::Windows::Forms::Panel::AutoSize' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3821: 'System::Windows::Forms::Control::Location': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3821: 'System::Drawing::Point': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3642: 'System::Drawing::Point::Point(int,int)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3175: 'System::Drawing::Point::Point': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C2039: 'set': 'System::Windows::Forms::Control::Location' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(68): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(68): error C3821: 'System::Windows::Forms::Control::Name': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(68): error C2039: 'set': 'System::Windows::Forms::Control::Name' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3821: 'System::Windows::Forms::Control::Size': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3821: 'System::Drawing::Size': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3642: 'System::Drawing::Size::Size(int,int)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3175: 'System::Drawing::Size::Size': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C2039: 'set': 'System::Windows::Forms::Control::Size' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(70): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(70): error C2039: 'set': 'System::Windows::Forms::Control::TabIndex' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'System::Windows::Forms::Control::Paint': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'System::Windows::Forms::PaintEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'SolidSimulator::MainForm::m_main_panel_Paint': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'System::Windows::Forms::Control::Paint::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3642: 'void System::Windows::Forms::Control::Paint::add(System::Windows::Forms::PaintEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3175: 'System::Windows::Forms::Control::Paint::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'System::Windows::Forms::Control::MouseDown': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'System::Windows::Forms::MouseEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'SolidSimulator::MainForm::m_main_panel_MouseDown': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'System::Windows::Forms::Control::MouseDown::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3642: 'void System::Windows::Forms::Control::MouseDown::add(System::Windows::Forms::MouseEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3175: 'System::Windows::Forms::Control::MouseDown::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'System::Windows::Forms::Control::MouseMove': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'System::Windows::Forms::MouseEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'SolidSimulator::MainForm::m_main_panel_MouseMove': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'System::Windows::Forms::Control::MouseMove::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3642: 'void System::Windows::Forms::Control::MouseMove::add(System::Windows::Forms::MouseEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3175: 'System::Windows::Forms::Control::MouseMove::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'System::Windows::Forms::Control::MouseUp': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'System::Windows::Forms::MouseEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'SolidSimulator::MainForm::m_main_panel_MouseUp': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'System::Windows::Forms::Control::MouseUp::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3642: 'void System::Windows::Forms::Control::MouseUp::add(System::Windows::Forms::MouseEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3175: 'System::Windows::Forms::Control::MouseUp::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3821: 'System::Windows::Forms::ContainerControl::AutoScaleDimensions': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3821: 'System::Drawing::SizeF': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3642: 'System::Drawing::SizeF::SizeF(float,float)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3175: 'System::Drawing::SizeF::SizeF': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C2039: 'set': 'System::Windows::Forms::ContainerControl::AutoScaleDimensions' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(79): error C3821: 'System::Windows::Forms::ContainerControl::AutoScaleMode': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(79): error C3821: 'System::Windows::Forms::AutoScaleMode::Font': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(79): error C2039: 'set': 'System::Windows::Forms::ContainerControl::AutoScaleMode' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3821: 'System::Windows::Forms::Form::ClientSize': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3821: 'System::Drawing::Size': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3642: 'System::Drawing::Size::Size(int,int)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3175: 'System::Drawing::Size::Size': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): fatal error C1003: プログラム内のエラーが 100 個を超えました。コンパイルは中断されます。
+  RigidPlane.cpp
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(33): error C3280: 'SolidSimulator::MainForm::~MainForm': マネージ クラスのメンバー関数をアンマネージド 関数としてコンパイルできません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(34): error C3821: 'SolidSimulator::MainForm::components': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3821: 'SolidSimulator::MainForm::components': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3821: 'System::IDisposable::Dispose': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3642: 'void System::IDisposable::Dispose(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3175: 'System::IDisposable::Dispose': アンマネージド 関数 'SolidSimulator::MainForm::~MainForm' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(38): error C3821: 'SolidSimulator::MainForm::~MainForm(void)': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(32): error C3645: 'SolidSimulator::MainForm::~MainForm': __clrcall は、ネイティブ コードにコンパイルされた関数では使用できません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(45): error C3280: 'SolidSimulator::MainForm::getInst': マネージ クラスのメンバー関数をアンマネージド 関数としてコンパイルできません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3821: 'SolidSimulator::MainForm::m_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3821: 'm_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3642: 'SolidSimulator::MainForm::MainForm(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3175: 'SolidSimulator::MainForm::MainForm': アンマネージド 関数 'SolidSimulator::MainForm::getInst' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(47): error C3821: 'SolidSimulator::MainForm::m_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(47): error C3821: 'm_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(48): error C3821: 'SolidSimulator::MainForm ^SolidSimulator::MainForm::getInst(void)': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(44): error C3645: 'SolidSimulator::MainForm::getInst': __clrcall は、ネイティブ コードにコンパイルされた関数では使用できません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(56): error C3280: 'SolidSimulator::MainForm::InitializeComponent': マネージ クラスのメンバー関数をアンマネージド 関数としてコンパイルできません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3821: 'System::Windows::Forms::Panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3642: 'System::Windows::Forms::Panel::Panel(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3175: 'System::Windows::Forms::Panel::Panel': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3821: 'SolidSimulator::MainForm::backgroundWorker1': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3821: 'System::ComponentModel::BackgroundWorker': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3642: 'System::ComponentModel::BackgroundWorker::BackgroundWorker(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3175: 'System::ComponentModel::BackgroundWorker::BackgroundWorker': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(59): error C3821: 'System::Windows::Forms::Control::SuspendLayout': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(59): error C3642: 'void System::Windows::Forms::Control::SuspendLayout(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(59): error C3175: 'System::Windows::Forms::Control::SuspendLayout': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'System::Windows::Forms::Control::Anchor': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'System::Windows::Forms::AnchorStyles::Top': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'System::Windows::Forms::AnchorStyles::Bottom': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(64): error C3821: 'System::Windows::Forms::AnchorStyles::Left': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(65): error C3821: 'System::Windows::Forms::AnchorStyles::Right': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(65): error C3821: 'System::Windows::Forms::AnchorStyles': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(65): error C2039: 'set': 'System::Windows::Forms::Control::Anchor' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(66): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(66): error C2039: 'set': 'System::Windows::Forms::Panel::AutoSize' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3821: 'System::Windows::Forms::Control::Location': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3821: 'System::Drawing::Point': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3642: 'System::Drawing::Point::Point(int,int)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3175: 'System::Drawing::Point::Point': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C2039: 'set': 'System::Windows::Forms::Control::Location' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(68): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(68): error C3821: 'System::Windows::Forms::Control::Name': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(68): error C2039: 'set': 'System::Windows::Forms::Control::Name' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3821: 'System::Windows::Forms::Control::Size': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3821: 'System::Drawing::Size': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3642: 'System::Drawing::Size::Size(int,int)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3175: 'System::Drawing::Size::Size': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C2039: 'set': 'System::Windows::Forms::Control::Size' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(70): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(70): error C2039: 'set': 'System::Windows::Forms::Control::TabIndex' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'System::Windows::Forms::Control::Paint': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'System::Windows::Forms::PaintEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'SolidSimulator::MainForm::m_main_panel_Paint': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'System::Windows::Forms::Control::Paint::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3642: 'void System::Windows::Forms::Control::Paint::add(System::Windows::Forms::PaintEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3175: 'System::Windows::Forms::Control::Paint::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'System::Windows::Forms::Control::MouseDown': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'System::Windows::Forms::MouseEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'SolidSimulator::MainForm::m_main_panel_MouseDown': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'System::Windows::Forms::Control::MouseDown::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3642: 'void System::Windows::Forms::Control::MouseDown::add(System::Windows::Forms::MouseEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3175: 'System::Windows::Forms::Control::MouseDown::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'System::Windows::Forms::Control::MouseMove': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'System::Windows::Forms::MouseEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'SolidSimulator::MainForm::m_main_panel_MouseMove': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'System::Windows::Forms::Control::MouseMove::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3642: 'void System::Windows::Forms::Control::MouseMove::add(System::Windows::Forms::MouseEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3175: 'System::Windows::Forms::Control::MouseMove::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'System::Windows::Forms::Control::MouseUp': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'System::Windows::Forms::MouseEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'SolidSimulator::MainForm::m_main_panel_MouseUp': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'System::Windows::Forms::Control::MouseUp::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3642: 'void System::Windows::Forms::Control::MouseUp::add(System::Windows::Forms::MouseEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3175: 'System::Windows::Forms::Control::MouseUp::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3821: 'System::Windows::Forms::ContainerControl::AutoScaleDimensions': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3821: 'System::Drawing::SizeF': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3642: 'System::Drawing::SizeF::SizeF(float,float)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3175: 'System::Drawing::SizeF::SizeF': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C2039: 'set': 'System::Windows::Forms::ContainerControl::AutoScaleDimensions' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(79): error C3821: 'System::Windows::Forms::ContainerControl::AutoScaleMode': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(79): error C3821: 'System::Windows::Forms::AutoScaleMode::Font': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(79): error C2039: 'set': 'System::Windows::Forms::ContainerControl::AutoScaleMode' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3821: 'System::Windows::Forms::Form::ClientSize': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3821: 'System::Drawing::Size': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3642: 'System::Drawing::Size::Size(int,int)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3175: 'System::Drawing::Size::Size': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): fatal error C1003: プログラム内のエラーが 100 個を超えました。コンパイルは中断されます。
   RigidSphere.cpp
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(33): error C3280: 'SolidSimulator::MainForm::~MainForm': マネージ クラスのメンバー関数をアンマネージド 関数としてコンパイルできません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(34): error C3821: 'SolidSimulator::MainForm::components': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3821: 'SolidSimulator::MainForm::components': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3821: 'System::IDisposable::Dispose': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3642: 'void System::IDisposable::Dispose(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(36): error C3175: 'System::IDisposable::Dispose': アンマネージド 関数 'SolidSimulator::MainForm::~MainForm' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(38): error C3821: 'SolidSimulator::MainForm::~MainForm(void)': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(32): error C3645: 'SolidSimulator::MainForm::~MainForm': __clrcall は、ネイティブ コードにコンパイルされた関数では使用できません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(45): error C3280: 'SolidSimulator::MainForm::getInst': マネージ クラスのメンバー関数をアンマネージド 関数としてコンパイルできません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3821: 'SolidSimulator::MainForm::m_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3821: 'm_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3642: 'SolidSimulator::MainForm::MainForm(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(46): error C3175: 'SolidSimulator::MainForm::MainForm': アンマネージド 関数 'SolidSimulator::MainForm::getInst' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(47): error C3821: 'SolidSimulator::MainForm::m_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(47): error C3821: 'm_singleton': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(48): error C3821: 'SolidSimulator::MainForm ^SolidSimulator::MainForm::getInst(void)': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(44): error C3645: 'SolidSimulator::MainForm::getInst': __clrcall は、ネイティブ コードにコンパイルされた関数では使用できません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(56): error C3280: 'SolidSimulator::MainForm::InitializeComponent': マネージ クラスのメンバー関数をアンマネージド 関数としてコンパイルできません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3821: 'System::Windows::Forms::Panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3642: 'System::Windows::Forms::Panel::Panel(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(57): error C3175: 'System::Windows::Forms::Panel::Panel': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3821: 'SolidSimulator::MainForm::backgroundWorker1': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3821: 'System::ComponentModel::BackgroundWorker': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3642: 'System::ComponentModel::BackgroundWorker::BackgroundWorker(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(58): error C3175: 'System::ComponentModel::BackgroundWorker::BackgroundWorker': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(59): error C3821: 'System::Windows::Forms::Control::SuspendLayout': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(59): error C3642: 'void System::Windows::Forms::Control::SuspendLayout(void)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(59): error C3175: 'System::Windows::Forms::Control::SuspendLayout': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'System::Windows::Forms::Control::Anchor': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'System::Windows::Forms::AnchorStyles::Top': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(63): error C3821: 'System::Windows::Forms::AnchorStyles::Bottom': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(64): error C3821: 'System::Windows::Forms::AnchorStyles::Left': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(65): error C3821: 'System::Windows::Forms::AnchorStyles::Right': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(65): error C3821: 'System::Windows::Forms::AnchorStyles': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(65): error C2039: 'set': 'System::Windows::Forms::Control::Anchor' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(66): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(66): error C2039: 'set': 'System::Windows::Forms::Panel::AutoSize' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3821: 'System::Windows::Forms::Control::Location': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3821: 'System::Drawing::Point': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3642: 'System::Drawing::Point::Point(int,int)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C3175: 'System::Drawing::Point::Point': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(67): error C2039: 'set': 'System::Windows::Forms::Control::Location' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(68): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(68): error C3821: 'System::Windows::Forms::Control::Name': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(68): error C2039: 'set': 'System::Windows::Forms::Control::Name' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3821: 'System::Windows::Forms::Control::Size': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3821: 'System::Drawing::Size': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3642: 'System::Drawing::Size::Size(int,int)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C3175: 'System::Drawing::Size::Size': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(69): error C2039: 'set': 'System::Windows::Forms::Control::Size' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(70): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(70): error C2039: 'set': 'System::Windows::Forms::Control::TabIndex' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'System::Windows::Forms::Control::Paint': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'System::Windows::Forms::PaintEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'SolidSimulator::MainForm::m_main_panel_Paint': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3821: 'System::Windows::Forms::Control::Paint::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3642: 'void System::Windows::Forms::Control::Paint::add(System::Windows::Forms::PaintEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(71): error C3175: 'System::Windows::Forms::Control::Paint::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'System::Windows::Forms::Control::MouseDown': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'System::Windows::Forms::MouseEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'SolidSimulator::MainForm::m_main_panel_MouseDown': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3821: 'System::Windows::Forms::Control::MouseDown::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3642: 'void System::Windows::Forms::Control::MouseDown::add(System::Windows::Forms::MouseEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(72): error C3175: 'System::Windows::Forms::Control::MouseDown::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'System::Windows::Forms::Control::MouseMove': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'System::Windows::Forms::MouseEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'SolidSimulator::MainForm::m_main_panel_MouseMove': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3821: 'System::Windows::Forms::Control::MouseMove::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3642: 'void System::Windows::Forms::Control::MouseMove::add(System::Windows::Forms::MouseEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(73): error C3175: 'System::Windows::Forms::Control::MouseMove::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'SolidSimulator::MainForm::m_main_panel': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'System::Windows::Forms::Control::MouseUp': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'System::Windows::Forms::MouseEventHandler': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'SolidSimulator::MainForm': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'SolidSimulator::MainForm::m_main_panel_MouseUp': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3821: 'System::Windows::Forms::Control::MouseUp::add': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3642: 'void System::Windows::Forms::Control::MouseUp::add(System::Windows::Forms::MouseEventHandler ^)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(74): error C3175: 'System::Windows::Forms::Control::MouseUp::add': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3821: 'System::Windows::Forms::ContainerControl::AutoScaleDimensions': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3821: 'System::Drawing::SizeF': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3642: 'System::Drawing::SizeF::SizeF(float,float)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C3175: 'System::Drawing::SizeF::SizeF': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(78): error C2039: 'set': 'System::Windows::Forms::ContainerControl::AutoScaleDimensions' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(79): error C3821: 'System::Windows::Forms::ContainerControl::AutoScaleMode': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(79): error C3821: 'System::Windows::Forms::AutoScaleMode::Font': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(79): error C2039: 'set': 'System::Windows::Forms::ContainerControl::AutoScaleMode' のメンバーではありません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3821: 'System::Windows::Forms::Form::ClientSize': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3821: 'System::Drawing::Size': マネージ型または関数は、アンマネージド関数で使用できません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3642: 'System::Drawing::Size::Size(int,int)': __clrcall 呼び出し規約を伴う関数を、ネイティブ コードから呼び出すことはできません
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): error C3175: 'System::Drawing::Size::Size': アンマネージド 関数 'SolidSimulator::MainForm::InitializeComponent' からマネージド型のメソッドを呼び出すことができません。
+c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\mainform.h(80): fatal error C1003: プログラム内のエラーが 100 個を超えました。コンパイルは中断されます。
   コードを生成中...
-  ConsoleApplication1.vcxproj -> C:\Users\ig\Desktop\Physics-simulator\ConsoleApplication1\x64\Release\ConsoleApplication1.exe

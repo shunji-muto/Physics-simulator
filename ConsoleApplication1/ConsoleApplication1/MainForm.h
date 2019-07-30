@@ -1,9 +1,7 @@
 #pragma once
 
 #include "stdio.h"
-#include "OglForCLI.h"
 #include "Score.h"
-
 
 
 namespace SolidSimulator {
@@ -22,26 +20,15 @@ namespace SolidSimulator {
 	{
 	private:
 		OglForCLI *m_ogl;
-		bool m_bBtnDown;
 		static MainForm^ m_singleton;
-		
-
-	public:
-		MainForm::MainForm();
-		
-		void RedrawMainPanel();
-		
-		static MainForm^ getInst()
-		{
-			if (m_singleton == nullptr) m_singleton = gcnew MainForm();
-			return m_singleton;
-		}
-
-
-	protected:
+		System::Windows::Forms::Panel^  m_main_panel;
+		System::ComponentModel::BackgroundWorker^  backgroundWorker1;
 		/// <summary>
-		/// 使用中のリソースをすべてクリーンアップします。
+		/// 必要なデザイナー変数です。
 		/// </summary>
+		System::ComponentModel::Container ^components;
+
+		MainForm::MainForm();
 		~MainForm()
 		{
 			if (components)
@@ -49,17 +36,17 @@ namespace SolidSimulator {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Panel^  m_main_panel;
 
-	private: System::ComponentModel::BackgroundWorker^  backgroundWorker1;
+	public:
 
-	private:
-		/// <summary>
-		/// 必要なデザイナー変数です。
-		/// </summary>
-		System::ComponentModel::Container ^components;
+		void RedrawMainPanel();
 
-		
+		static MainForm^ getInst()
+		{
+			if (m_singleton == nullptr) m_singleton = gcnew MainForm();
+			return m_singleton;
+		}
+
 #pragma region Windows Form Designer generated code
 		/// <summary>
 		/// デザイナー サポートに必要なメソッドです。このメソッドの内容を
@@ -102,43 +89,17 @@ namespace SolidSimulator {
 
 		}
 #pragma endregion
-	private: System::Void m_main_panel_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e)
-	{
-		RedrawMainPanel();
-	}
-	private: System::Void m_main_panel_MouseDown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e)
-	{
-		m_bBtnDown = true;
-		if (e->Button == System::Windows::Forms::MouseButtons::Left)   m_ogl->BtnDown_Trans(EVec2i(e->X, e->Y));
-		if (e->Button == System::Windows::Forms::MouseButtons::Middle) m_ogl->BtnDown_Zoom (EVec2i(e->X, e->Y));
-		if (e->Button == System::Windows::Forms::MouseButtons::Right)  m_ogl->BtnDown_Rot  (EVec2i(e->X, e->Y));
-	}
-	private: System::Void m_main_panel_MouseUp(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) 
-	{
-		m_ogl->BtnUp();
-		m_bBtnDown = false;
-	}
-	private: System::Void m_main_panel_MouseMove(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) 
-	{
-		if (m_bBtnDown)
-		{
-			m_ogl->MouseMove(EVec2i(e->X, e->Y));
-			this->RedrawMainPanel();
-		}
-	}
-	private: System::Void MainForm_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e)
-	{
-	}
-	private: System::Void MainForm_KeyUp(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e)
-	{
-	}
+	private:
+		System::Void m_main_panel_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e);
+		System::Void m_main_panel_MouseDown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e);
+		System::Void m_main_panel_MouseUp(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e);
+		System::Void m_main_panel_MouseMove(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e);
+		System::Void MainForm_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e);
+		System::Void MainForm_KeyUp(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e);
+		System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e);
+	};
 
-	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e) {
-	}
-};
-	
-
-	inline void MainForm_RedrawMainPanel() 
+	inline void MainForm_RedrawMainPanel()
 	{
 		MainForm::getInst()->RedrawMainPanel();
 	}
