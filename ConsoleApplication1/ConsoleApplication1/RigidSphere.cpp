@@ -1,7 +1,5 @@
 #include "stdafx.h"
-#include "RigidSphere.h"
-#include "tmath.h"
-#include "OglForCLI.h"
+#include "RigidObject.h"
 
 
 RigidSphere::RigidSphere(const float &massa, const float &radius, const EVec3f &position, const EVec3f &velocity)
@@ -48,10 +46,18 @@ RigidSphere::RigidSphere(const float &massa, const float &radius, const EVec3f &
 	}
 }
 
+
+float RigidSphere::GetRadius()
+{
+	return m_radius;
+}
+
+
 void RigidSphere::StepSimulation(const EVec3f &externalForce)
 {
 	const float  dt      = 0.01f;
-	const EVec3f totalForce = externalForce + gravity * m_massa;
+	//const EVec3f totalForce = externalForce + gravity * m_massa;
+	const EVec3f totalForce = externalForce;
 
 	//f->a(F=m*a)
 	EVec3f acceleration = totalForce / m_massa;
@@ -63,19 +69,28 @@ void RigidSphere::StepSimulation(const EVec3f &externalForce)
 	m_position += dt * m_velocity;
 
 	if( (m_position[1] - m_radius) < 0) m_velocity[1] = -m_velocity[1];
-
-	printf("position = %f \n",m_position[1]);
 }
 
-void RigidSphere::DrawObj()
+
+
+bool RigidSphere::pickedObject(const EVec3f &rayPos, const EVec3f &rayDir)
 {
-	float   shin[1] = { 64 };
+	const EVec3f h = rayPos + (m_position - rayPos).dot(rayDir)*rayDir;
+	const float distance = (h - m_position).norm();
+	const bool isPicked = distance < m_radius;
+	return isPicked;
+}
+
+
+void RigidSphere::DrawObject()
+{
+	/*float   shin[1] = { 64 };
 	EVec4f  spec(1, 1, 1, 0.5), diff(0.5f, 0.5f, 0.5f, 0.5f), ambi(0.5f, 0.5f, 0.5f, 0.5f);
 	glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, spec.data());
 	glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, diff.data());
 	glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, ambi.data());
 	glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, shin);
-
+*/
 	glTranslated(m_position[0], m_position[1], m_position[2]);
 
 	//•`‰æ

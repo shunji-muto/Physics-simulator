@@ -1,21 +1,21 @@
 #pragma once
 
-#pragma unmanaged
 
 #include "MainForm.h"
-#include "RigidPlane.h"
-#include "RigidSphere.h"
+#include "RigidObject.h"
+#include "vector"
+#include "OglForCLI.h"
+#include "Eigen"
+
+#pragma unmanaged
 
 class Score
 {
 private:
 	bool m_onMouseL, m_onMouseR, m_onMouseM;
-	int  m_pickedObjectId, m_pickedVertexId, m_flag;
+	int  m_pickedObjectId, m_flag;
 	EVec3f m_rayPos, m_rayDir, m_grabForce, grabForce;
-	
-	RigidPlane  *testPlane;
-	RigidSphere *testSphere;
-
+	std::vector<RigidObject*> m_objects;
 	Score();
 
 public:
