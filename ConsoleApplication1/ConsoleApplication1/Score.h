@@ -3,8 +3,7 @@
 #pragma unmanaged
 
 #include "MainForm.h"
-#include "RigidPlane.h"
-#include "RigidSphere.h"
+#include "RigidObject.h"
 
 class Score
 {
@@ -22,7 +21,6 @@ public:
 	}
 
 	void OnDraw();
-
 	void StepTime();
 };
 

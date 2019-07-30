@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "RigidSphere.h"
+#include "RigidObject.h"
 #include "tmath.h"
 #include "OglForCLI.h"
 
@@ -10,6 +10,7 @@ RigidSphere::RigidSphere(const float &massa, const float &radius, const EVec3f &
 	m_radius   = radius;
 	m_position = position;
 	m_velocity = velocity;
+	m_objectType = E_Sphere;
 
 	const int stack = 16;//経線（縦）
 	const int slice = 32;//緯線（横）
@@ -67,7 +68,7 @@ void RigidSphere::StepSimulation(const EVec3f &externalForce)
 	printf("position = %f \n",m_position[1]);
 }
 
-void RigidSphere::DrawObj()
+void RigidSphere::DrawObject()
 {
 	float   shin[1] = { 64 };
 	EVec4f  spec(1, 1, 1, 0.5), diff(0.5f, 0.5f, 0.5f, 0.5f), ambi(0.5f, 0.5f, 0.5f, 0.5f);
