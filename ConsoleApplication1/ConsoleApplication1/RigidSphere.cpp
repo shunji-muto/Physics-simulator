@@ -2,12 +2,13 @@
 #include "RigidObject.h"
 
 
-RigidSphere::RigidSphere(const float &massa, const float &radius, const EVec3f &position, const EVec3f &velocity)
+RigidSphere::RigidSphere(const float &radius, const EVec3f &position, const EVec3f &velocity)
 {
-	m_massa = massa;
 	m_radius   = radius;
 	m_position = position;
 	m_velocity = velocity;
+	m_isPicking = false;
+	a = b = c = EVec3f(0, 0, 0);
 
 	const int stack = 16;//Œoüicj
 	const int slice = 32;//ˆÜüi‰¡j
@@ -26,7 +27,6 @@ RigidSphere::RigidSphere(const float &massa, const float &radius, const EVec3f &
 			const float x = sin((float)M_PI * pi * 2) * r;
 		
 			m_vertexs.push_back(EVec3f(x, y, z));
-			m_normals.push_back(EVec3f(x, y, z) / m_radius);
 		}
 	}
 
@@ -47,50 +47,8 @@ RigidSphere::RigidSphere(const float &massa, const float &radius, const EVec3f &
 }
 
 
-float RigidSphere::GetRadius()
-{
-	return m_radius;
-}
-
-
-void RigidSphere::StepSimulation(const EVec3f &externalForce)
-{
-	const float  dt      = 0.01f;
-	//const EVec3f totalForce = externalForce + gravity * m_massa;
-	const EVec3f totalForce = externalForce;
-
-	//f->a(F=m*a)
-	EVec3f acceleration = totalForce / m_massa;
-
-	//a->v
-	m_velocity += dt * acceleration;
-
-	//v->pos
-	m_position += dt * m_velocity;
-
-	if( (m_position[1] - m_radius) < 0) m_velocity[1] = -m_velocity[1];
-}
-
-
-
-bool RigidSphere::pickedObject(const EVec3f &rayPos, const EVec3f &rayDir)
-{
-	const EVec3f h = rayPos + (m_position - rayPos).dot(rayDir)*rayDir;
-	const float distance = (h - m_position).norm();
-	const bool isPicked = distance < m_radius;
-	return isPicked;
-}
-
-
 void RigidSphere::DrawObject()
 {
-	/*float   shin[1] = { 64 };
-	EVec4f  spec(1, 1, 1, 0.5), diff(0.5f, 0.5f, 0.5f, 0.5f), ambi(0.5f, 0.5f, 0.5f, 0.5f);
-	glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, spec.data());
-	glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, diff.data());
-	glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, ambi.data());
-	glMaterialfv(GL_FRONT_AND_BACK, GL_SHININESS, shin);
-*/
 	glTranslated(m_position[0], m_position[1], m_position[2]);
 
 	//•`‰æ
@@ -100,14 +58,45 @@ void RigidSphere::DrawObject()
 		const int i0 = m_polygonIds[i][0];
 		const int i1 = m_polygonIds[i][1];
 		const int i2 = m_polygonIds[i][2];
-		 
+
 		glColor3f(1.0f, 0.0f, 0.0f);
-		glNormal3fv(m_normals[i0].data());
 		glVertex3fv(m_vertexs[i0].data());
-		glNormal3fv(m_normals[i1].data());
 		glVertex3fv(m_vertexs[i1].data());
-		glNormal3fv(m_normals[i2].data());
 		glVertex3fv(m_vertexs[i2].data());
 	}
 	glEnd();
 }
+
+
+bool RigidSphere::IsPickedObject(const EVec3f &rayPos, const EVec3f &rayDir)
+{
+	EVec3f rayDirUnitVector = rayDir.normalized();
+	EVec3f rayPos2objPos    = m_position - rayPos;
+	float  innerProduct     = rayDirUnitVector.dot(rayPos2objPos);
+	EVec3f projection       = innerProduct * rayDirUnitVector + rayPos;
+	a = projection;
+	b = m_position;
+	c = rayPos;
+	printf("‹…‚ÌˆÊ’u: %f %f %f\n", m_position[0], m_position[1], m_position[2]);
+	printf("ŽË‰e: %f %f %f\n", projection[0], projection[1], projection[2]);
+	float  distance = (m_position - projection).norm();
+	printf("‹——£: %f\n", distance);
+
+	const  bool isPicked = distance < m_radius;
+	return isPicked;
+}
+
+void RigidSphere::IsPickedTrue()
+{
+	m_isPicking = true;
+}
+void RigidSphere::IsPickedFalse()
+{
+	m_isPicking = false;
+}
+
+bool RigidSphere::IsPicking()
+{
+	return m_isPicking;
+}
+

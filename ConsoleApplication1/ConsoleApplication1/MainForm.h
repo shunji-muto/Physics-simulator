@@ -22,13 +22,7 @@ namespace SolidSimulator {
 		OglForCLI *m_ogl;
 		static MainForm^ m_singleton;
 		MainForm::MainForm();
-		~MainForm()
-		{
-			if (components)
-			{
-				delete components;
-			}
-		}
+		
 		System::Windows::Forms::Panel^  m_main_panel;
 		System::ComponentModel::BackgroundWorker^  backgroundWorker1;
 		System::ComponentModel::Container ^components;
@@ -42,6 +36,14 @@ namespace SolidSimulator {
 			return m_singleton;
 		}
 
+	protected:
+		~MainForm()
+		{
+			if (components)
+			{
+				delete components;
+			}
+		}
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -85,6 +87,7 @@ namespace SolidSimulator {
 
 		}
 #pragma endregion
+	//ƒCƒxƒ“ƒgŠÖ”
 	private: System::Void m_main_panel_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e);
 	private: System::Void m_main_panel_MouseDown(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e);
 	private: System::Void m_main_panel_MouseUp(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e);
@@ -93,7 +96,7 @@ namespace SolidSimulator {
 	private: System::Void MainForm_KeyUp(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e);
 	private: System::Void MainForm_Load(System::Object^  sender, System::EventArgs^  e);
 };
-
+	//
 	inline void MainForm_RedrawMainPanel() 
 	{
 		MainForm::getInst()->RedrawMainPanel();

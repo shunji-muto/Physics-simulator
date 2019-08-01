@@ -30,7 +30,7 @@ System::Void MainForm::m_main_panel_MouseUp(System::Object^  sender, System::Win
 }
 System::Void MainForm::m_main_panel_MouseMove(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e)
 {
-		Score::getInst()->MouseMove(EVec2i(e->X, e->Y), m_ogl);
+	Score::getInst()->MouseMove(EVec2i(e->X, e->Y), m_ogl);
 }
 System::Void MainForm::MainForm_KeyDown(System::Object^  sender, System::Windows::Forms::KeyEventArgs^  e)
 {
@@ -55,11 +55,11 @@ void MainForm::RedrawMainPanel()
 	if (isFirst)
 	{
 		isFirst = false;
-
+		m_ogl->SetBgColor(0.8f, 0.8f, 0.8f, 0.5f);
 		m_ogl->SetCam(EVec3f(5, 10, 30), EVec3f(0, 0, 0), EVec3f(0, 1, 0));
 	}
 
-	m_ogl->OnDrawBegin(m_main_panel->Width, m_main_panel->Height, 45.0, 0.1f, 1000);
+	m_ogl->OnDrawBegin(m_main_panel->Width, m_main_panel->Height, 45.0, 0.01, 700);
 	Score::getInst()->OnDraw();
 	m_ogl->OnDrawEnd();
 }

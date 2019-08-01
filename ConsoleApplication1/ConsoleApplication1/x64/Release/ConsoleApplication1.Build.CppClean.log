@@ -3,7 +3,6 @@ c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\stdafx.obj
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\mainform.obj
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\solidsimulator.obj
-c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\shapemacthingcube.obj
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\score.obj
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\rigidsphere.obj
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\rigidplane.obj
@@ -17,8 +16,6 @@ c:\users\muto\desktop\physics-simulator\consoleapplication1\x64\release\consolea
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\app.res
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\consoleapplication1.vcxproj.generateresource.cache
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\consoleapplication1.vcxprojassemblyreference.cache
-c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\playboard.obj
-c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\simulationfield.obj
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\consolea.ca7ce627.tlog\cl.command.1.tlog
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\consolea.ca7ce627.tlog\cl.read.1.tlog
 c:\users\muto\desktop\physics-simulator\consoleapplication1\consoleapplication1\x64\release\consolea.ca7ce627.tlog\cl.write.1.tlog

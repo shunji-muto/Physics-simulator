@@ -19,4 +19,3 @@ Class SolidSimulator.MainForm: AutoLayout, AnsiClass, Class, Public, BeforeField
   Methods:
     RedrawMainPanel(): PrivateScope, Public, HideBySig
     getInst(): PrivateScope, Public, Static, HideBySig
-    InitializeComponent(): PrivateScope, Public, HideBySig

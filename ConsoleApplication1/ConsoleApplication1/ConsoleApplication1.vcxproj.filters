@@ -76,9 +76,6 @@
     <ClCompile Include="Score.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="RigidPlane.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="RigidSphere.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
